@@ -1,4 +1,5 @@
 # update-all
+![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
 A minimal PowerShell script to update packages from:
 - Winget

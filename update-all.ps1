@@ -14,7 +14,7 @@ param(
     [switch]$Check
 )
 
-function Command-Exists {
+function Test-Command {
     param ($cmd)
     return [bool](Get-Command $cmd -ErrorAction SilentlyContinue)
 }
@@ -34,7 +34,7 @@ if ($All) {
 
 # --- Scoop ---
 if ($Scoop) {
-    if (Command-Exists "scoop") {
+    if (Test-Command "scoop") {
 
         if ($Check) {
             Write-Host "[Scoop] Checking for updates..."
@@ -65,7 +65,7 @@ if ($Scoop) {
 
 # --- Chocolatey ---
 if ($Choco) {
-    if (Command-Exists "choco") {
+    if (Test-Command "choco") {
 
         if ($Check) {
             Write-Host "[Chocolatey] Checking for updates..."
@@ -95,7 +95,7 @@ if ($Choco) {
 
 # --- Winget ---
 if ($Winget) {
-    if (Command-Exists "winget") {
+    if (Test-Command "winget") {
 
         if ($Check) {
             Write-Host "[Winget] Checking for updates..."
