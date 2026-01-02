@@ -1,0 +1,20 @@
+# update-all
+
+A minimal PowerShell script to update packages from:
+- Winget
+- Chocolatey
+- Scoop
+
+Designed for clean, quiet output.
+
+## Features
+- One-line-per-package output
+- Selective updates via flags
+- Dry-run mode
+- Works on Windows PowerShell 5.1+
+
+## Usage
+```powershell
+update-all
+update-all -Winget
+update-all -Check
