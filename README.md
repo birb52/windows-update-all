@@ -20,3 +20,4 @@ Designed for clean, quiet output.
 update-all
 update-all -Winget
 update-all -Check
+```
