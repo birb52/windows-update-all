@@ -1,4 +1,4 @@
-# update-all
+# windows-update-all
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
 A minimal PowerShell script to update packages from:
@@ -15,6 +15,7 @@ Designed for clean, quiet output.
 - Works on Windows PowerShell 5.1+
 
 ## Usage
+
 ```powershell
 update-all
 update-all -Winget
